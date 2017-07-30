@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gautamastudios.gingerswiper.view.SwipeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/hidden_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:id="@+id/trash_can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Test"
+            android:src="@drawable/ic_grey_action_discard"
+            android:background="@drawable/trash_can_selector"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/visible_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+</com.gautamastudios.gingerswiper.view.SwipeView>
